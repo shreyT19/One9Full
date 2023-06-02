@@ -1,0 +1,94 @@
+@import "../../../css-config/mixins.scss";
+
+.newsletter-section {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  background: url(../../../assets/newsletter-bg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .newsletter-content {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+  .small-text {
+    margin-bottom: 0.95rem;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .big-text {
+    margin-bottom: 1.25rem;
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    padding: 0 1.875rem;
+    @include md {
+      font-size: 1.75rem;
+    }
+  }
+  .form {
+    display: flex;
+    gap: 0.313rem;
+    margin-bottom: 0.616rem;
+    align-items: center;
+    input {
+      width: 12.5rem;
+      height: 2.5rem;
+      border-radius: 0.3rem;
+      
+      border: 1px solid rgba(0,0,0,0.2);
+      padding: 0 0.75rem;
+      font-size: 1rem;
+      outline: 0;
+      @include md{
+        width: 18.75rem;
+      }
+    }
+    .btn{
+        outline:0;
+        border:0;
+        border-radius: 0.3rem;
+        height: 2.5rem;
+        width: 6.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 1rem;
+        color:white;
+        background-color: #8e2de2;
+        
+        @include md{
+            width: 7.5rem;
+        }
+
+    }
+
+  }
+  .text{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.875rem;
+    margin-bottom: 1.25rem;
+  }
+  .social-icons{
+      display: flex;
+      gap:0.625rem; 
+      .icon{
+        border-radius: 50%;
+          background-color: black;
+          color:white;
+          height: 1.875rem;
+          width: 1.875rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+  }
+
+}

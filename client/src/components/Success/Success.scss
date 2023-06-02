@@ -1,0 +1,50 @@
+@import "../../css-config/mixins.scss";
+
+.success-header{
+   max-width: 800px;
+    margin: 0 auto;
+    margin-block:1rem;
+    text-align: center;
+    @include md{
+        max-width: 1200px;
+    }
+    .success-body{
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+        @include md{
+            padding: 100px 0;
+        }
+        .confirm-img{
+            img{
+                width: 100px;
+                
+            }
+        }
+        .btn{
+            outline: 0;
+            border: 0;
+            appearance: none;
+            display: flex;
+            height: 2.75rem;
+            padding: 10px 25px;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1rem;
+            color: white;
+            background-color: #8e2de2;
+            border-bottom: 3px solid #8e2de2;
+            flex-grow: 1;
+            margin-top: 0.5rem;
+            border-radius: 5px; 
+            &:hover{
+                opacity: 0.80;
+            }         
+        }
+    }
+
+}

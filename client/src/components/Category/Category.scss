@@ -1,0 +1,27 @@
+@import "../../css-config/mixins.scss";
+
+.category-main-content{
+    margin: 1.875rem 0;
+    @include md{
+        margin: 4.688rem 0;
+    }
+    .layout{
+        max-width: calc(100% - 1.25rem);
+        margin: 0 auto;
+        @include md{
+            max-width: 75rem;
+        }
+    }
+    .category-title{
+        font-size: 1.5rem;
+        @include md{
+            font-size: 2.215rem;
+        }
+    }
+    .products-container{
+        margin: 1.25rem 0;
+        @include md{
+            margin: 3.125rem 0;
+        }
+    }
+}

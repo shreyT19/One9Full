@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "build"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/.*",
+        "dest": "a86fe5b7693256702bb942651d7ea143ba939bcf5537c645ca443018e021a1aca71b4fd2137d514a12a289fb9265a70a2dd8bb45bbd740a921853501791ac66f93b542d5ff4ea323ff7a656979ebc7d74f6c10a92545fd9a43812920b3f64326e07919df715a39d8bf1ec1a8b081c4ed6d22cd9a8a5efcbcf4d579847d11b1e8"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+  }

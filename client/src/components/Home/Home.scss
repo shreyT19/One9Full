@@ -1,0 +1,9 @@
+@import "../../css-config/mixins.scss";
+
+.main-content{
+    max-width: calc(100% - 1.25rem);
+    margin: 0 auto;
+    @include md{
+        max-width: 75rem;
+    }
+}
